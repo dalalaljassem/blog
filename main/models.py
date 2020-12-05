@@ -4,7 +4,7 @@ from django.utils import timezone
 class Post(models.Model):
    
     title = models.CharField(max_length=250)
-    header_image = models.ImageField(upload_to="images/")
+    # header_image = models.ImageField(upload_to="images/")
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now())
     published_date = models.DateTimeField(blank=True, null=True)
